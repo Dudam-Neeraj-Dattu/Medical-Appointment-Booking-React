@@ -1,86 +1,27 @@
-body {
-  background-image: url(/assests/images/bg.png);
-  background-size: cover;
-}
 
 @font-face {
   font-family: "cooper-black";
-  src: url(/assests/fonts/COOPBL.woff);
+  src: url(../assests/fonts/COOPBL.woff);
 }
 
-.container {
-  max-width: 900px;
+.SignUp {
+  /* max-width: 900px; */
   margin: 0 auto;
-  /* padding: 20px; */
-  margin-top: 10%;
+  margin-top: 5%;
   overflow: hidden;
   border-radius: 50px;
   border: 3px solid #B473DD;
+  width: 50%;
+  /* height: 50%; */
 }
 
-label {
-  font-family: 'cooper-black', serif;
-  font-size: 18px;
-  color: #4C4B4D;
-  height: 20px;
-  width: 200px;
-  margin-top: 10px;
-  margin-left: 10px;
-  text-align: right;
-  margin-right: 15px;
-  float: left;
-}
-
-input {
-  height: 20px;
-  width: 300px;
-  border: 1px solid #000;
-  /* margin-top: 10px; */
-}
-
-input::placeholder {
-  font-family: 'cooper-black', serif;
-  /* font-size: 80%; */
-  opacity: 0.4;
-
-}
-.password-visibility {
-  position: relative;
-  top: -39px;
-  left: 92%;
-  cursor: pointer;
-  font-size: 17px;
-}
-
-.signup-grid {
-  display: grid;
-  grid-template-columns: 0.1fr 1.5fr 8fr;
-  grid-gap: 10px;
+.Login .login-content{
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .signup-text {
-  /* margin-top: 30px; */
-  grid-column: 1 / 4;
-  text-align: center;
-}
-
-
-.signup-text1 span {
-  color: #3c79a7;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.signup-form {
-  grid-column: 2 / 4;
-  /* align-content: center; */
-}
-
-.signup {
-  flex: 1;
-  background-color: #fff;
-  padding: 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
 }
 
 .signup-text h1,
@@ -100,25 +41,108 @@ h2 {
   color: #3F5EFF;
 }
 
-.signup-role {
-  font-size: 16px;
-  margin-bottom: 10px;
+.signup-text1 span {
+  color: #3c79a7;
+  font-weight: 600;
+  cursor: pointer;
 }
+
+/* div.signup-form div.form-group {
+  margin-bottom: 30px;
+} */
+
+label {
+  /* font-family: 'cooper-black', serif;
+  font-size: 18px;
+  color: #4C4B4D; */
+  
+  /* float: left; */
+}
+
+input {
+  height: 20px;
+  width: 150%;
+  border: 1px solid #000;
+  /* margin-top: 10px; */
+  /* margin-right: 40px; */
+}
+
+input::placeholder {
+  font-family: 'cooper-black', serif;
+  opacity: 0.4;
+
+}
+
+.password-visibility {
+  position: relative;
+  top: -39px;
+  left: 92%;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+
+
+.signup-form {
+  /* grid-column: 2 / 4; */
+  /* align-content: center; */
+}
+
+/* .signup {
+    flex: 1;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  } */
+
+
+
+/* .signup-role {
+    font-size: 16px;
+    margin-bottom: 10px;
+  } */
 
 .form-group {
   margin-bottom: 30px;
-  margin-top: 30px;
-  margin-left: 30px;
+  /* margin-top: 30px; */
+  margin-right: 90px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .form-group label {
-  display: block;
+  /* display: flex; */
   margin-bottom: 5px;
   font-weight: bold;
 }
 
+.signup-form .form-group .label {
+  font-family: 'cooper-black', serif;
+  font-size: 18px;
+  color: #4C4B4D;
+  /* height: 20px; */
+  /* width: 200px; */
+  /* margin-top: 10px;
+  margin-left: 10px; */
+  /* text-align: left; */
+  margin-right: 35px;
+}
+
+.signup-form .form-group .email {
+  margin-right: 68px;
+}
+.signup-form .form-group .name {
+  margin-right: 74px;
+}
+.signup-form .form-group .phone {
+  margin-right: 68px;
+}
+
+
 .form-control {
-  width: 40%;
+  /* width: 150%; */
   padding: 8px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -127,7 +151,10 @@ h2 {
 
 .btn-group {
   margin-top: .0001px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */  
+  width: 50%;
+  margin: auto;
+  flex-wrap: wrap;
   /* align-content: center; */
 }
 
@@ -139,17 +166,17 @@ h2 {
   cursor: pointer;
 }
 
-.btn-primary {
-  background-color: #007bff;
-  color: #fff;
-}
+/* .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+  } */
 
-.btn-danger {
-  background-color: #dc3545;
-  color: #fff;
-}
-
-button {
+.btn-group button {
   /* position:; */
   /* display: ; */
   transition: all 0.5s ease-in-out;
@@ -165,13 +192,13 @@ button {
   margin-bottom: 40px;
 }
 
-.submit {
+.login-submit {
   color: white;
   border-radius: 10px;
   background: #798CF2;
 }
 
-.reset {
+.login-reset {
   margin-left: 10px;
   border-radius: 10px;
   background: #E85E5E;
@@ -181,13 +208,7 @@ button:hover {
   transform: scale(0.98);
 }
 
-.mainLoginInput::placeholder {
-  font-family: 'cooper-black', serif;
-  color: #C3BAC9;
-}
-
-.mainLoginInput:-ms-input-placeholder {
-  /* font-family: 'myFont', Arial, Helvetica, sans-serif; */
-  font-family: 'cooper-black', serif;
-  color: #C3BAC9;
+.forgot-password a {
+  text-decoration: none;
+  color: #6C6770;
 }

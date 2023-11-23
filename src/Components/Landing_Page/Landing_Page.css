@@ -1,34 +1,38 @@
-* {
+/* * {
     margin: 0;
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
-}
+} */
 
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@500&display=swap');
 
 @font-face {
     font-family: "cooper-black";
-    src: url(/assests/fonts/COOPBL.woff);
+    src: url(../assests/fonts/COOPBL.woff);
 }
 
-body {
-    background-image: url(/assests/images/bg.png);
+/* body {
+    background-image: url(../assests/images/bg.png);
     background-size: cover;
-}
+} */
 
-.hero-section {
+/* .landing_page {
     height: 100vh;
     padding-top: 15rem;    
     z-index: -1;
+} */
+
+.landing_page {
+    margin-top: 15vh;
 }
 
-.hero-section .flex-hero {
+.landing_page .flex-hero {
     flex-direction: column;
     gap: 30px;
     text-align: center;
 }
 
-.hero-section .flex-hero h1 {
+.landing_page .flex-hero h1 {
     color: #4C4B4D;
     text-align: center;
     font-family: "cooper-black", serif;
@@ -47,7 +51,7 @@ body {
     line-height: normal;
 }
 
-.hero-section h4 {
+.landing_page h4 {
     font-size: 24px;
     font-weight: 900;
     font-style: normal;    
@@ -57,22 +61,24 @@ body {
     color: #908896;
 }
 
-.hero-section .button {
+.landing_page .button {
     padding: 0.7rem 2rem;
     border-radius: 25px;
     background-color: #B67EDA;
     color: #fff;
     border: 1px solid transparent;
-    font-family: "cooper-black", serif;
+    font-family: 'Crimson Pro', serif;
+    font-weight: 900;
+    font-size:x-large;
     width: 15%;
     margin-top: 60px;
 }
 
-.hero-section div:nth-child(2) {
+.landing_page div:nth-child(2) {
     margin-top: 4rem;
 }
 
-.hero-section .image {
+.landing_page .image {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -97,6 +103,7 @@ h2 {
 
 
 button {
+    /* font-family: "cooper-black", serif; */
     transition: all 0.5s ease-in-out;
     font-size: 1em;
     padding: 1em;
@@ -112,15 +119,15 @@ button {
 
 
 @media screen and (max-width:980px) {
-    .hero-section h1 {
+    .landing_page h1 {
         text-align: center;
     }
 
-    .hero-section {
+    .landing_page {
         padding-top: 12rem;
     }
 
-    .hero-section h4 {
+    .landing_page h4 {
         font-size: 21px;
         text-align: center;
         padding: 0px 4rem;
@@ -130,7 +137,7 @@ button {
         width: 500px;
     }
 
-    .hero-section .button {
+    .landing_page .button {
         margin-top: 15px;
         width: 45%;
     }
@@ -138,15 +145,15 @@ button {
 }
 
 @media screen and (max-width:400px) {
-    .hero-section h1 {
+    .landing_page h1 {
         font-size: 35px;
     }
 
-    .hero-section {
+    .landing_page {
         padding-top: 10rem;
     }
 
-    .hero-section h4 {
+    .landing_page h4 {
         font-size: 16px;
         padding: 0px 2rem;
     }
