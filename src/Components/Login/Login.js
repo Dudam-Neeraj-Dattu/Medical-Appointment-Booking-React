@@ -23,7 +23,7 @@ function Login() {
                             <label for="password">Password</label>
                         </div>
                         <div className="input">
-                            <input name="password" id="password" required className="form-control" placeholder="Enter your password" aria-describedby="helpId" />
+                            <input type='password' name="password" id="password" required className="form-control" placeholder="Enter your password" aria-describedby="helpId" />
                         </div>
                     </div>
 

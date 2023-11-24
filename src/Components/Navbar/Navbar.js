@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import './Navbar.css'
 import icon from '../assests/images/Stethoscope.png'
 import login from '../Login/Login'
+import { useEffect } from 'react'
+// import Landing_Page from '../Landing_Page/Landing_Page'
 
 const Navbar = () => {
 
@@ -17,7 +19,7 @@ const Navbar = () => {
             </div>
             <div className="nav__links">
                 <div className="home link">
-                    <a href="/Landing_Page/Landing_Page.html">Home</a>
+                    <a href="/Home">Home</a>
                 </div>
                 <div className="appointment link">
                     <a href="/">Appointments</a>
@@ -29,12 +31,12 @@ const Navbar = () => {
                     <a href="/">Reviews</a>
                 </div>
                 <div className="sign_up link">
-                    <a href="/">
+                    <a href="/Sign_Up">
                         <button className="nav-btn1">Sign Up</button>
                     </a>
                 </div>
                 <div className="login link">
-                    <a href="/">
+                    <a href="/Login">
                         <button className="nav-btn1">Login</button>
                     </a>
                 </div>

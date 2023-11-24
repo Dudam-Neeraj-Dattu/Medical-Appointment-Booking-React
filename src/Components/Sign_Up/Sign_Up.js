@@ -2,6 +2,8 @@ import React from 'react'
 import './Sign_Up.css'
 
 function Sign_Up() {
+
+    
     return (
         <div className="SignUp">
             <div className="signup-content">
@@ -23,7 +25,9 @@ function Sign_Up() {
                             <label for="email">Phone</label>
                         </div>
                         <div className="input">
-                            <input type="tel" name="phone" id="phone" required className="form-control" placeholder="Enter your phone number" aria-describedby="helpId" />
+                            <input type="tel" name="phone" id="phone" required className="form-control" placeholder="Enter your phone number" aria-describedby="helpId" 
+                                pattern='[0-9]{3}-[0-9]{2}-[0-9]{3}'
+                            />
                         </div>
                     </div>
                     <div className="form-group">
@@ -39,7 +43,7 @@ function Sign_Up() {
                             <label for="password">Password</label>
                         </div>
                         <div className="input">
-                            <input name="password" id="password" required className="form-control" placeholder="Enter your password" aria-describedby="helpId" />
+                            <input type='password' name="password" id="password" required className="form-control" placeholder="Enter your password" aria-describedby="helpId" />
                         </div>
                     </div>
 
