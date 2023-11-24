@@ -7,7 +7,7 @@ function Login() {
             <div className="login-content">
                 <div className="signup-text">
                     <h1>Login</h1>
-                    <h2>Are you a new member ? <a href="/">Sign Up Here</a></h2>
+                    <h2>Are you a new member ? <a href="/Sign_Up">Sign Up Here</a></h2>
                 </div>
                 <form className="signup-form">
                     <div className="form-group">

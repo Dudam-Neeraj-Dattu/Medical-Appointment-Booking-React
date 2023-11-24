@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 import icon from '../assests/images/Stethoscope.png'
-import login from '../Login/Login'
 import { useEffect } from 'react'
 // import Landing_Page from '../Landing_Page/Landing_Page'
 
